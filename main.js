@@ -22,6 +22,12 @@ wordArr.forEach(function() {
 	underscores.push("_ ")
 })
 
+document.getElementById("ask").addEventListener("click", function(){
+	let x = document.getElementById("abc").value
+	document.getElementById("abc").value = ""
+	guess(x)
+})
+
 
 $("#turnsleft").html(guessesleft)
 $("#lettersguessed").html(trackguesses)
@@ -49,10 +55,12 @@ function guess(alpha) {
 
 		if (correctguesses === underscores.length) {
 			feedback = "You win!"
+			document.getElementById("check").disabled = true
 		}
 
 		} else {
 			feedback = "You are out of guesses!"
+			document.getElementById("check").disabled = true
 		}
 		$("#turnsleft").html(guessesleft)
 		$("#lettersguessed").html(trackguesses)
