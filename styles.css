@@ -1,0 +1,81 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: grey;
+	display: flex;
+}
+
+#main {
+	width: 800px;
+	height: 600px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+	display: flex;
+}
+
+#top {
+	width: 800px;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#guesses {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+#feedback {
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+	font-size: 40px;
+}
+
+#turns {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	text-align: center;
+}
+h1 {
+	font-size: 26px;
+}
+
+p {
+	font-size: 46px;
+}
+#word {
+	width: 800px;
+	height: 200px;
+	position: absolute;
+	top: 508px;
+	text-align: center;
+	line-height: 200px;
+	font-size: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
